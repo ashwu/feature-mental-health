@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	// smooth scrolling
+	// SMOOTH SCROLLING
 
 	$('a').click(function(){
     	$('html, body').animate({
@@ -9,48 +9,25 @@ $(document).ready(function(){
     	return false;
 	});
 
-	// init SCROLL MAGIC controller
+	// INIT SCROLL MAGIC
 	var controller = new ScrollMagic.Controller();
 
-	// can optimize this later, if it matters
-	var height_intro = $("#intro").height();
-	var height_diversity = $("#diversity").height();
-	var height_straight = $("#straight-a-grade-a").height();
-	var height_campus = $("#campus-culture").height();
-	var height_grow = $("#growing").height();
-	var height_care = $("#self-care").height();
-	var height_what = $("#what-can-we-do").height();
+	// BUILD SCENES
 
-	// build scenes
-	new ScrollMagic.Scene({triggerElement: "#intro",  duration: height_intro})
-		.setClassToggle("#sub-one", "selected") // add class toggle
-		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#diversity", duration: height_diversity})
-		.setClassToggle("#sub-two", "selected") // add class toggle
-		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#straight-a-grade-a", duration: height_straight})
-		.setClassToggle("#sub-three", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
-		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#campus-culture", duration: height_campus})
-		.setClassToggle("#sub-four", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
-		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#growing", duration: height_grow})
-		.setClassToggle("#sub-five", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
-		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#self-care", duration: height_care})
-		.setClassToggle("#sub-six", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
-		.addTo(controller);
-	new ScrollMagic.Scene({triggerElement: "#what-can-we-do", duration: height_what})
-		.setClassToggle("#sub-seven", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
-		.addTo(controller);
+	$("#sidebar a").each(function(){ 
+		var href = $(this).attr('href'); 
+		var div_id = href.substr(1);
+		
+		for (var i = 0; i < div_id.length; i++){
+			new ScrollMagic.Scene({triggerElement: "#"+div_id,  duration: $("#"+div_id).height() })
+				.setClassToggle("#sub-" + div_id, "selected") // add class toggle
+				.addTo(controller);
+		}
+	}); 
+	// END SCROLL MAGIC
 
 	
-	// sticky side bar
+	// STICKY SIDE BAR
 
 	var stickyNavTop = $('#sidebar').offset().top;
 	 
