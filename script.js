@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-// smooth scrolling
+	// smooth scrolling
 
 	$('a').click(function(){
     	$('html, body').animate({
@@ -9,12 +9,10 @@ $(document).ready(function(){
     	return false;
 	});
 
-	// init controller
+	// init SCROLL MAGIC controller
 	var controller = new ScrollMagic.Controller();
 
-	var divs = ["#intro", "#diversity", "#straight-a-grade-a", "#campus-culture", "#growing", "#self-care", "#what-can-we-do"];
-	// console.log(divs.length);
-
+	// can optimize this later, if it matters
 	var height_intro = $("#intro").height();
 	var height_diversity = $("#diversity").height();
 	var height_straight = $("#straight-a-grade-a").height();
@@ -52,6 +50,8 @@ $(document).ready(function(){
 		.addTo(controller);
 
 	
+	// sticky side bar
+
 	var stickyNavTop = $('#sidebar').offset().top;
 	 
 	var stickyNav = function(){
@@ -68,8 +68,6 @@ $(document).ready(function(){
 	$(window).scroll(function() {
 	    stickyNav();
 	});
-
-
 
 
 });
