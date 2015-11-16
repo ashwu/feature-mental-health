@@ -1,0 +1,273 @@
+body {
+	margin: 0;
+	background-color: #e9f6ff;
+}
+
+/* PURPLE BAR, LOGO, COVER PHOTO */
+
+header {
+	padding: 0.5em;
+	height: 2.25em;
+	background-color: #501f84; /* this is NBN purple */
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo {
+	width: 2.25em;
+}
+
+.cover-img{
+	width: 100%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+}
+
+/* HEADLINE, SUBHEAD, BYLINE AND HORIZONTAL RULE */
+
+#hed-dek {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+	font-size: 4.5em;
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 0.7em;
+}
+
+h2 {
+	font-size: 1.1em;
+	text-align: center;
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	/*background-color: rgba(255,255,255,0.5);*/
+}
+
+h3 {
+	text-align: center;
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 700;
+	font-size: 1.2em;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+hr {
+	width: 10em;
+	margin-bottom: 3em;
+}
+
+/* BODY */
+
+.body-text {
+	width: 45%;
+	max-width: 630px;
+	margin: .75em auto .75em auto;
+	font-family: "Georgia", serif;
+	font-size: 1.1em;
+	line-height: 1.8em;
+}
+
+.pink {
+	background-color: #FFC1C1;
+	padding: 0 0.35em;
+}
+
+.center {
+	width: 45%;
+	max-width: 630px;
+	margin: .75em auto .75em auto;
+}
+
+.subhead {
+	font-weight: bold;
+	font-family: "Proxima Sans", sans-serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+	padding-top: 1.8em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* IMAGES */
+
+.inline-img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.inline-img-lg {
+	width: 65%;
+	max-width: 850px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+figcaption {
+	color: #aaaaaa;
+	font-weight: 300;
+	font-size: 0.9em;
+	font-family: "Proxima Nova", sans-serif;
+	line-height: 1.25em;
+}
+
+figure {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+/* QUOTES */
+
+.quote {
+	display: block;
+	width: 300px;
+	color: #555555;
+	font-size: 1.25em;
+	font-weight: 300;
+	line-height: 1.5em;
+	display: block;
+	font-family: "Proxima Nova", sans-serif;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.right{
+	float: right;
+	margin-right: 20%;
+	margin-left: 2em;
+	padding-left: 2em;
+	border-left: 1px solid #aaaaaa;
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+
+.left {
+	float: left;
+	text-align: right;
+	margin-right: 2em;
+	margin-left: 20%;
+	padding-right: 2em;
+	border-right: 1px solid #aaaaaa;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+}
+
+/* FOOTER BAR, FOOTER TEXT */
+
+footer {
+	padding-right: 0.5em;
+	height: 5em;
+	background-color: #501f84; /* this is NBN purple */
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+footer p {
+	color: #ffffff;
+	width: 45%;
+	max-width: 630px;
+	margin: .75em auto .75em auto;
+	font-size: 0.9em;
+	font-family: "Proxima Nova", sans-serif;
+	line-height: 0.9em;
+} 
+
+footer p a {
+	color: #ffffff;
+}
+
+
+
+/*media queries*/
+@media screen and (max-width: 600px) {
+	#hed-dek{
+		width: 100%;
+	}
+
+	h1{
+		width: 85% auto 0 auto;
+		font-size: 3em;
+	}
+
+	h2{
+		width: 85%;
+		font-size: 1.2em;
+	}
+
+	.body-text {
+		width: 80%;
+	}
+
+	.inline-img, .inline-img-lg, .center {
+		width: 100%;
+	}
+
+	.quote {
+		display: block;
+		width: 50%;
+		color: #555555;
+		font-size: 1em;
+		line-height: 1.5em;
+		font-family: sans-serif;
+		text-align: center;
+	}
+	
+	.right {
+		border-top: 1px solid #aaaaaa;
+		border-bottom: 1px solid #aaaaaa;
+		border-right: none;
+		border-left: none;
+		padding-right: 1.3em;
+		margin-left: 1em;
+		margin-top: 1em;
+	}
+
+	.left {
+		border-top: 1px solid #aaaaaa;
+		border-bottom: 1px solid #aaaaaa;
+		border-right: none;
+		border-left: none;
+		padding-left: 1.3em;
+		margin-left: 4em;
+		margin-top: 1em;
+	}
+
+	footer {
+		padding-right: 0.5em;
+		height: 5em;
+		background-color: #501f84; /* this is NBN purple */
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	footer p {
+		width: 80%;
+
+	}
+}
