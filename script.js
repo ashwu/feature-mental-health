@@ -32,11 +32,23 @@ $(document).ready(function(){
 		// .addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
 
-	 $('#sidebar').stickyMojo({footerID: '#footer', contentID: '#story-container'});
+	
+	var stickyNavTop = $('#sidebar').offset().top;
+	 
+	var stickyNav = function(){
+		var scrollTop = $(window).scrollTop(); 
+		if (scrollTop > stickyNavTop) { 
+	   		$('#sidebar').addClass('sticky');
+		} else {
+	    	$('#sidebar').removeClass('sticky'); 
+		}
+	};
+ 
+	stickyNav();
+ 
+	$(window).scroll(function() {
+	    stickyNav();
+	});
 
-	 // $('.sub-side').on('click', function(){
-	 // 	$(this).addClass('selected');
-	 // 	console.log('hey');
-	 // });
 
 });

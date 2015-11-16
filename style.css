@@ -30,7 +30,7 @@ header {
 
 #hed-dek {
 	margin-top: 5em;
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 	width: 65%;
 	border-bottom: 3px solid #FFC1C1;
 
@@ -88,12 +88,18 @@ hr {
 	float: left;
 	width: 25%;
 	display: block;
-	position: fixed;
 }
 
 #story-container {
 	float: right;
 	width: 65%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }
 
 .body-text {
