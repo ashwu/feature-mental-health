@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+// smooth scrolling
+
+	$('a').click(function(){
+    	$('html, body').animate({
+        	scrollTop: $( $(this).attr('href') ).offset().top
+    	}, 200);
+    	return false;
+	});
+
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
@@ -16,12 +26,9 @@ $(document).ready(function(){
 	// build scenes
 	new ScrollMagic.Scene({triggerElement: "#intro",  duration: height_intro})
 		.setClassToggle("#sub-one", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
-
 		.addTo(controller);
 	new ScrollMagic.Scene({triggerElement: "#diversity", duration: height_diversity})
 		.setClassToggle("#sub-two", "selected") // add class toggle
-		// .addIndicators() // add indicators (requires plugin)
 		.addTo(controller);
 	new ScrollMagic.Scene({triggerElement: "#straight-a-grade-a", duration: height_straight})
 		.setClassToggle("#sub-three", "selected") // add class toggle

@@ -31,15 +31,16 @@ header {
 #hed-dek {
 	margin-top: 5em;
 	width: 100%;
-	border-bottom: 3px solid #FFC1C1;
+	border-bottom: 1.5px solid #FFC1C1;
 }
 
-.intro {
+.important {
 	font-family: "Roboto Condensed";
 	color: #FFC1C1;
 	text-transform: uppercase;
-	font-size: 2.3em;
-	line-height: 1.2em;
+	font-size: 1.3em;
+	line-height: 1em;
+	/*font-style: italic;*/
 }
 
 h1 {
@@ -92,6 +93,7 @@ hr {
 #story-container {
 	float: right;
 	width: 65%;
+	margin-top: 15px;
 }
 
 .sticky {
@@ -159,7 +161,7 @@ a:hover{
 }
 
 /* IMAGES */
-
+/*
 .inline-img {
 	display: block;
 	margin-right: auto;
@@ -185,14 +187,14 @@ figcaption {
 figure {
 	margin-top: 3em;
 	margin-bottom: 3em;
-}
+}*/
 
 /* QUOTES */
 
-.quote {
+/*.quote {
 	display: block;
 	width: 300px;
-	color: #555555;
+	color: #FFC1C1;
 	font-size: 1.25em;
 	font-weight: 300;
 	line-height: 1.5em;
@@ -201,8 +203,8 @@ figure {
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
-
-.right{
+*/
+/*.right{
 	float: right;
 	margin-right: 20%;
 	margin-left: 2em;
@@ -224,7 +226,7 @@ figure {
 	border-bottom: none;
 	border-left: none;
 }
-
+*/
 /* FOOTER BAR, FOOTER TEXT */
 
 footer {
@@ -274,11 +276,11 @@ footer p a {
 		width: 80%;
 	}
 
-	.inline-img, .inline-img-lg, .center {
+	/*.inline-img, .inline-img-lg, .center {
 		width: 100%;
-	}
+	}*/
 
-	.quote {
+	/*.quote {
 		display: block;
 		width: 50%;
 		color: #555555;
@@ -306,7 +308,7 @@ footer p a {
 		padding-left: 1.3em;
 		margin-left: 4em;
 		margin-top: 1em;
-	}
+	}*/
 
 	footer {
 		padding-right: 0.5em;
