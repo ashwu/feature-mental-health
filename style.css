@@ -30,7 +30,7 @@ header {
 
 #hed-dek {
 	margin-top: 5em;
-	/*margin-left: 5%;*/
+	margin-left: 10px;
 	width: 65%;
 	border-bottom: 3px solid #FFC1C1;
 
@@ -78,15 +78,17 @@ hr {
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
-	/*display: inline;*/
+	height: auto;
+	overflow: hidden;
+	position: relative;
 }
 
-#subhead-container {
+#sidebar {
 	margin: 2em 15px 0em 0;
 	float: left;
 	width: 25%;
 	display: block;
-	/*position: fixed;*/
+	position: fixed;
 }
 
 #story-container {
@@ -118,7 +120,7 @@ hr {
 	margin: .75em auto .75em auto;
 }
 
-.sub-side {
+.side-piece {
 	font-family: "Proxima Nova", serif;
 	font-size: 1em;
 	padding: 5px;
@@ -138,18 +140,18 @@ hr {
 	font-size: 1.5em;
 }
 
-
-
 #what-can-we-do {
 	border: 0;
 }
 
 a {
 	text-decoration: none;
+	font-family: "Proxima Nova", serif;
+	color: #333;
 }
 
 a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* IMAGES */
